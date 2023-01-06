@@ -7,27 +7,28 @@ const About = () => {
       className='w-full h-full pb-24 bg-gradient-to-b from-gray-800 to-black text-white'
     >
       <div className='max-w-screen-lg p-4 flex mx-auto flex-col justify-center w-full h-full'>
-        <div className='p-8'>
+        <div className=''>
           <p className='text-4xl font-bold inline border-b-4 border-gray-500'>
             About
           </p>
         </div>
         <p className='text-xl mt-20 '>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur,
-          aperiam! Quam quas illum facilis quaerat repellendus, vero iure rem
-          consequuntur, a suscipit fuga. Tenetur porro impedit inventore
-          accusantium ab in debitis aliquid a autem cumque quasi perspiciatis
-          natus praesentium quia, fugit vitae temporibus unde. Repellat cum ipsa
-          ut labore quasi?
+          I have been a tech enthusiast since I was eight, and my interest has
+          only grown. I like to solve challenging real-world problems by
+          leveraging my skills to their fullest; this allows me to work on
+          exciting projects and, at the same time, enlightens me about the
+          unknown.
         </p>
         <br />
         <p className='text-xl'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          doloremque eaque, ducimus distinctio numquam alias voluptatibus vel
-          minus hic maiores, ex incidunt, nulla illo cum repudiandae veniam
-          veritatis molestiae? Tempora voluptatibus laudantium consequuntur,
-          dolores modi saepe, odio amet similique est quasi, quaerat hic ratione
-          voluptas quidem. Blanditiis suscipit adipisci inventore.
+          My specialties are; I am a quick learner and a highly industrious
+          individual. Some of the skills I learned from my Bachelor's degree,
+          internship from RRCAT, and working for Capgemini are - C, C++, JAVA,
+          Python, MySQL, SQL, Git and GitHub, Microsoft Certified: Azure
+          Fundamentals. Moreover, I regularly practice my coding skills to
+          improve my grasp of data structures and algorithms. I've started to
+          fan out on technologies such as Node.js, React.js, HTML, CSS, and
+          JavaScript.
         </p>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../assets/wall.jpg';
+// import img from '../assets/wall.jpg';
 import mlImg from '../assets/ml.webp';
 import webDevImg from '../assets/webDev.jpg';
 const Portfolio = () => {
