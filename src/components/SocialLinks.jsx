@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { SiLeetcode } from 'react-icons/si';
 
 const SocialLinks = () => {
   const links = [
@@ -20,7 +21,7 @@ const SocialLinks = () => {
           Github <FaGithub size={30}></FaGithub>
         </>
       ),
-      href: 'https://github.com',
+      href: 'https://github.com/adhyyanT',
     },
     {
       child: (
@@ -29,6 +30,14 @@ const SocialLinks = () => {
         </>
       ),
       href: 'mailto:adhyyantripathi@outlook.com',
+    },
+    {
+      child: (
+        <>
+          Leetcode <SiLeetcode size={30}></SiLeetcode>
+        </>
+      ),
+      href: 'https://leetcode.com/Droid232/',
     },
     {
       child: (

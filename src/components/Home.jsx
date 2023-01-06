@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '../assets/img.png';
+import heroImg from '../assets/img-2.png';
 import { FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-scroll';
 import Typed from 'react-typed';
@@ -30,8 +30,8 @@ const Home = () => {
                 'Not afraid to take risks',
                 'Looking for an internship',
               ]}
-              typeSpeed={40}
-              backSpeed={50}
+              typeSpeed={20}
+              backSpeed={40}
             />
           </p>
           <div className='sm:mb-10'>

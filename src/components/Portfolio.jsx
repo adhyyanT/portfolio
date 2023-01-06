@@ -1,8 +1,32 @@
 import React from 'react';
 import img from '../assets/wall.jpg';
-
+import mlImg from '../assets/ml.webp';
+import webDevImg from '../assets/webDev.jpg';
 const Portfolio = () => {
-  const portfolios = [img, img, img, img, img, img];
+  const portfolios = [
+    {
+      img: mlImg,
+      hidden: true,
+      name: 'Acoustic Scene classification',
+      github: 'https://github.com/adhyyanT/acoustic-scene-classification',
+      live: '',
+    },
+    {
+      img: webDevImg,
+      hidden: true,
+      name: 'Corona Tracker',
+      github: 'https://github.com/adhyyanT/corona-tracker',
+      live: '',
+    },
+    {
+      img: webDevImg,
+      hidden: true,
+      name: 'SMIT-Result',
+      github: 'https://github.com/adhyyanT/smit-result',
+      live: '',
+    },
+  ];
+
   return (
     <div
       name='Portfolio'
@@ -18,20 +42,29 @@ const Portfolio = () => {
 
         {/* Add portfolio cards */}
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-          {portfolios.map((img, index) => (
+          {portfolios.map(({ img, hidden, name, github, live }, index) => (
             <div key={index} className='shadow-sm shadow-gray-600 rounded-lg'>
-              <img
-                src={img}
-                alt=''
-                className='rounded-md duration-200 hover:scale-105'
-              />
+              <a href={github} target='_blank'>
+                <button>
+                  <img
+                    src={img}
+                    alt=''
+                    className='rounded-md duration-200 hover:scale-105'
+                  />
+                </button>
+              </a>
               <div className='flex items-center justify-center '>
-                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
-                  Demo
+                <button
+                  hidden={hidden}
+                  className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'
+                >
+                  Live
                 </button>
-                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>
-                  Code
-                </button>
+                <a href={github} target='_blank'>
+                  <p className='px-6 py-3 m-4 duration-200 hover:scale-105 text-xl text-center justify-center'>
+                    {name}
+                  </p>
+                </a>
               </div>
             </div>
           ))}
