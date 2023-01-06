@@ -2,6 +2,8 @@ import React from 'react';
 import heroImg from '../assets/img.png';
 import { FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-scroll';
+import Typed from 'react-typed';
+
 const Home = () => {
   return (
     <div
@@ -17,9 +19,21 @@ const Home = () => {
       >
         <div className=''>
           <h2 className='text-4xl sm:text-7xl font-bold text-white '>
-            I am a Software Engineer
+            I am a Graduate Student
+            {/*  */}
           </h2>
-          <p className='text-gray-500 py-4 max-w-md'>Lorem ipsum dolor sit</p>
+          <p className='text-gray-400 py-4 max-w-md text-xl'>
+            <Typed
+              strings={[
+                '1 year experienced Software Engineer',
+                'Problem solver',
+                'Not afraid to take risks',
+                'Looking for an internship',
+              ]}
+              typeSpeed={40}
+              backSpeed={50}
+            />
+          </p>
           <div className='sm:mb-10'>
             <Link
               to='Portfolio'
