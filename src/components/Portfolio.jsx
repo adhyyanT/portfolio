@@ -44,7 +44,7 @@ const Portfolio = () => {
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
           {portfolios.map(({ img, hidden, name, github, live }, index) => (
             <div key={index} className='shadow-sm shadow-gray-600 rounded-lg'>
-              <a href={github} target='_blank'>
+              <a href={github} target='_blank' rel='noreferrer'>
                 <button>
                   <img
                     src={img}
@@ -60,7 +60,7 @@ const Portfolio = () => {
                 >
                   Live
                 </button>
-                <a href={github} target='_blank'>
+                <a href={github} target='_blank' rel='noreferrer'>
                   <p className='px-6 py-3 m-4 duration-200 hover:scale-105 text-xl text-center justify-center'>
                     {name}
                   </p>
