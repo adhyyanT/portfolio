@@ -1,7 +1,5 @@
 import React from 'react';
-import img from '../assets/img-new.png';
-import htmlImg from '../assets/html.png';
-import cssImg from '../assets/css.png';
+
 import gitImg from '../assets/git.png';
 import jsImg from '../assets/javascript.png';
 import reactImg from '../assets/react.png';
