@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
-const NavBar = () => {
+const NavBar = ({ setNavEn }) => {
+  // props.navEn = nav;
   const links = ['Home', 'About', 'Portfolio', 'Experience', 'Contact'];
   const [nav, setNav] = useState(false);
+  const changeStateOfNav = () => {
+    setNav(!nav);
+    setNavEn(nav);
+  };
   return (
     <div
       className='px-4 flex items-center justify-between h-20 text-white fixed
@@ -29,7 +34,7 @@ const NavBar = () => {
       </ul>
       <div
         className='cursor-pointer pr-4 text-gray-500 z-10 md:hidden'
-        onClick={() => setNav(!nav)}
+        onClick={changeStateOfNav}
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
@@ -42,12 +47,7 @@ const NavBar = () => {
         >
           {links.map((link, index) => (
             <li key={index} className='cursor-pointer py-6 text-4xl px-4'>
-              <Link
-                to={link}
-                onClick={() => setNav(!nav)}
-                smooth
-                duration={500}
-              >
+              <Link to={link} onClick={changeStateOfNav} smooth duration={500}>
                 {link}
               </Link>
               {/* {console.log(link + ' ' + index)} */}

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -7,14 +8,15 @@ import NavBar from './components/NavBar';
 import Portfolio from './components/Portfolio';
 import SocialLinks from './components/SocialLinks';
 function App() {
+  const [navEn, setNavEn] = useState(true);
   return (
     <div>
-      <NavBar />
-      <Home />
+      <NavBar setNavEn={setNavEn} />
+      <Home navEn={navEn} />
       <About />
       <Portfolio />
       <Experience />
-      <Contact />
+      <Contact navEn={navEn} />
       <SocialLinks></SocialLinks>
     </div>
   );

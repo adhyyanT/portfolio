@@ -4,7 +4,7 @@ import { FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-scroll';
 import Typed from 'react-typed';
 
-const Home = () => {
+const Home = ({ navEn }) => {
   return (
     <div
       name='Home'
@@ -23,16 +23,18 @@ const Home = () => {
             {/*  */}
           </h2>
           <p className='text-gray-400 py-4 max-w-md text-xl'>
-            <Typed
-              strings={[
-                '1 year experienced Software Engineer',
-                'Problem solver',
-                'Not afraid to take risks',
-                'Looking for an internship',
-              ]}
-              typeSpeed={20}
-              backSpeed={40}
-            />
+            {navEn && (
+              <Typed
+                strings={[
+                  '1 year experienced Software Engineer',
+                  'Problem solver',
+                  'Not afraid to take risks',
+                  'Looking for an internship',
+                ]}
+                typeSpeed={20}
+                backSpeed={40}
+              />
+            )}
           </p>
           <div className='sm:mb-10'>
             <Link
