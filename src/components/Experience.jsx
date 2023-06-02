@@ -61,10 +61,6 @@ const Experience = () => {
 
   const timeLine = [
     {
-      date: 2023,
-      work: 'Masters of Science Computer Science from XYZ University',
-    },
-    {
       date: 2022,
       work: 'Analyst / Software Engineer at Capgemini',
     },

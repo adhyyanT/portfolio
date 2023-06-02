@@ -19,7 +19,7 @@ const Home = ({ navEn }) => {
       >
         <div className=''>
           <h2 className='text-4xl sm:text-7xl font-bold text-white '>
-            I am a Graduate Student
+            I am a Software Engineer
             {/*  */}
           </h2>
           <p className='text-gray-400 py-4 max-w-md text-xl'>
@@ -29,7 +29,7 @@ const Home = ({ navEn }) => {
                   '1 year experienced Software Engineer',
                   'Problem solver',
                   'Not afraid to take risks',
-                  'Looking for an internship',
+                  'Looking for a job',
                 ]}
                 typeSpeed={20}
                 backSpeed={40}

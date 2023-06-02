@@ -21,8 +21,8 @@ const Portfolio = () => {
     {
       img: webDevImg,
       hidden: true,
-      name: 'SMIT-Result',
-      github: 'https://github.com/adhyyanT/smit-result',
+      name: 'Path-Finder',
+      github: 'https://eclectic-cheesecake-f9586e.netlify.app/',
       live: '',
     },
   ];
