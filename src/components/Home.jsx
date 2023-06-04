@@ -28,7 +28,6 @@ const Home = ({ navEn }) => {
                 strings={[
                   '1 year experienced Software Engineer',
                   'Problem solver',
-                  'Not afraid to take risks',
                   'Looking for a job',
                 ]}
                 typeSpeed={20}
