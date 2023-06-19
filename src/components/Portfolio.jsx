@@ -14,8 +14,8 @@ const Portfolio = () => {
     {
       img: webDevImg,
       hidden: true,
-      name: 'Corona Tracker',
-      github: 'https://github.com/adhyyanT/corona-tracker',
+      name: 'E-Commerce',
+      github: 'https://curious-lokum-f601fa.netlify.app/',
       live: '',
     },
     {
@@ -23,6 +23,13 @@ const Portfolio = () => {
       hidden: true,
       name: 'Path-Finder',
       github: 'https://eclectic-cheesecake-f9586e.netlify.app/',
+      live: '',
+    },
+    {
+      img: webDevImg,
+      hidden: true,
+      name: 'Corona Tracker',
+      github: 'https://github.com/adhyyanT/corona-tracker',
       live: '',
     },
   ];
