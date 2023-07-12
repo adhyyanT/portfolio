@@ -5,12 +5,13 @@ import webDevImg from '../assets/webDev.jpg';
 const Portfolio = () => {
   const portfolios = [
     {
-      img: mlImg,
+      img: webDevImg,
       hidden: true,
-      name: 'Acoustic Scene classification',
-      github: 'https://github.com/adhyyanT/acoustic-scene-classification',
+      name: 'UrlPico',
+      github: 'https://url-pico.vercel.app/',
       live: '',
     },
+
     {
       img: webDevImg,
       hidden: true,
@@ -23,6 +24,13 @@ const Portfolio = () => {
       hidden: true,
       name: 'Path-Finder',
       github: 'https://eclectic-cheesecake-f9586e.netlify.app/',
+      live: '',
+    },
+    {
+      img: mlImg,
+      hidden: true,
+      name: 'Acoustic Scene classification',
+      github: 'https://github.com/adhyyanT/acoustic-scene-classification',
       live: '',
     },
     {
