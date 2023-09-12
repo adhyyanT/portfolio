@@ -16,7 +16,7 @@ const Portfolio = () => {
       img: webDevImg,
       hidden: true,
       name: 'E-Commerce',
-      github: 'https://curious-lokum-f601fa.netlify.app/',
+      github: 'https://ecommerce2-rg4r.vercel.app/',
       live: '',
     },
     {
