@@ -45,7 +45,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30}></BsFillPersonLinesFill>
         </>
       ),
-      href: '/Adhyyan_Tripathi_new.pdf',
+      href: '/Adhyyan_tripathi.pdf',
       style: 'rounded-br-md',
       download: true,
     },
